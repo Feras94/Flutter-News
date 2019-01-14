@@ -48,7 +48,7 @@ class NewsItemCard extends StatelessWidget {
       child: CachedNetworkImage(
         height: 150,
         fit: BoxFit.cover,
-        imageUrl: newsItem.imageUrl,
+        imageUrl: newsItem.imageUrl ?? '',
         placeholder: new Center(
           child: new Container(
             padding: EdgeInsets.all(16),
