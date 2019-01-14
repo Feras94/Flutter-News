@@ -13,10 +13,6 @@ class FCM {
 
     if (Platform.isIOS) _requestIosPermissions();
 
-    _firebaseMessaging.getToken().then((token) {
-      print('FCM Token = $token');
-    });
-
     _firebaseMessaging.configure(
       onMessage: (Map<String, dynamic> message) async {
         print('on message $message');
