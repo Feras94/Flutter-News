@@ -16,6 +16,7 @@ dependencies:
     url_launcher: ^4.0.3
     firebase_messaging: ^2.1.0
     firebase_core: ^0.2.5+1
+    firebase_admob: ^0.7.0
 
 dev_dependencies:
     flutter_test:
