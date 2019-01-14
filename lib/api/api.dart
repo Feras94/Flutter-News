@@ -10,6 +10,7 @@ class AppApi {
   static final instance = new AppApi._internal();
   AppApi._internal();
 
+  // common headers that are sent with every request
   final Map<String, String> _requestHeaders = {
     HttpHeaders.authorizationHeader: 'Bearer 2e1914b1e3c2401f996ac4d66f4eda93',
     HttpHeaders.contentTypeHeader: 'application/json; charset=utf-8',
@@ -19,6 +20,7 @@ class AppApi {
   Future<List<NewsItem>> fetchNews() async {
     final response = await http.get('https://newsapi.org/v2/top-headlines?language=en', headers: _requestHeaders);
     if (response.statusCode == 200) {
+      // transform and return the news items
       final Map<String, dynamic> decodedBody = jsonDecode(response.body);
       final List<dynamic> jsonNewsItems = decodedBody['articles'];
       final List<NewsItem> newsItems = jsonNewsItems.map((jsonItem) {
