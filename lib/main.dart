@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
 import './pages/index.dart';
 import 'services/fcm.dart';
+import 'services/admob.dart';
 
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
   MyApp() {
     FCM.instance.init();
+    AdMob.instance.init();
   }
 
   @override
