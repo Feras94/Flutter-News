@@ -1,16 +1,38 @@
-# news_app
+# World News Flutter Application
 
-A new Flutter project.
+A simple flutter application to view the latest world news and powered by [NewsAPI.org](newsapi.org) and implementing Firebase services.
+
+## Implementation & Features
+
+-   Dart programming language.
+-   Flutter framework for cross platform mobile applications.
+-   [NewsAPI.org](newsapi.org) News feeds.
+-   Material Design for UI elements.
+-   Firebase Cloud Messaging integration for push notifications and messages.
+-   Google's AdMob for interstitial ads.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+-   Clone the project:
 
-A few resources to get you started if this is your first Flutter project:
+```git
+git clone https://github.com/Feras94/Flutter-News
+```
 
--   [Lab: Write your first Flutter app](https://flutter.io/docs/get-started/codelab)
--   [Cookbook: Useful Flutter samples](https://flutter.io/docs/cookbook)
+-   Restore packages:
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.io/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```cmd
+flutter packages get
+```
+
+-   Run on connected device:
+
+```cmd
+flutter run
+```
+
+## Building APK for Production
+
+```cmd
+flutter build apk
+```
